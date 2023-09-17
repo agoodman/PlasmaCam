@@ -11,7 +11,7 @@ import SwiftUI
 struct PlasmaCamApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: CameraViewModel())
         }
     }
 }

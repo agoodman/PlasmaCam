@@ -11,6 +11,10 @@
 		019118572AB617CF00B624B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019118562AB617CF00B624B5 /* ContentView.swift */; };
 		019118592AB617D100B624B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019118582AB617D100B624B5 /* Assets.xcassets */; };
 		0191185C2AB617D100B624B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0191185B2AB617D100B624B5 /* Preview Assets.xcassets */; };
+		019118632AB617DD00B624B5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019118622AB617DD00B624B5 /* CameraManager.swift */; };
+		019118652AB61B8300B624B5 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019118642AB61B8300B624B5 /* CameraViewModel.swift */; };
+		019118682AB63B5600B624B5 /* ExposureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019118672AB63B5600B624B5 /* ExposureViewModel.swift */; };
+		0191186A2AB6C2B800B624B5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019118692AB6C2B800B624B5 /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		019118562AB617CF00B624B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		019118582AB617D100B624B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0191185B2AB617D100B624B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		019118622AB617DD00B624B5 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		019118642AB61B8300B624B5 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		019118662AB620E300B624B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		019118672AB63B5600B624B5 /* ExposureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureViewModel.swift; sourceTree = "<group>"; };
+		019118692AB6C2B800B624B5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		019118532AB617CF00B624B5 /* PlasmaCam */ = {
 			isa = PBXGroup;
 			children = (
+				019118662AB620E300B624B5 /* Info.plist */,
 				019118542AB617CF00B624B5 /* PlasmaCamApp.swift */,
+				019118622AB617DD00B624B5 /* CameraManager.swift */,
+				019118672AB63B5600B624B5 /* ExposureViewModel.swift */,
 				019118562AB617CF00B624B5 /* ContentView.swift */,
+				019118692AB6C2B800B624B5 /* PreviewView.swift */,
+				019118642AB61B8300B624B5 /* CameraViewModel.swift */,
 				019118582AB617D100B624B5 /* Assets.xcassets */,
 				0191185A2AB617D100B624B5 /* Preview Content */,
 			);
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019118682AB63B5600B624B5 /* ExposureViewModel.swift in Sources */,
 				019118572AB617CF00B624B5 /* ContentView.swift in Sources */,
+				019118652AB61B8300B624B5 /* CameraViewModel.swift in Sources */,
+				019118632AB617DD00B624B5 /* CameraManager.swift in Sources */,
 				019118552AB617CF00B624B5 /* PlasmaCamApp.swift in Sources */,
+				0191186A2AB6C2B800B624B5 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +287,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlasmaCam/Preview Content\"";
+				DEVELOPMENT_TEAM = JXP3JA7B24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlasmaCam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,8 +317,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlasmaCam/Preview Content\"";
+				DEVELOPMENT_TEAM = JXP3JA7B24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlasmaCam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

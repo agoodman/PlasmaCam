@@ -15,7 +15,6 @@ struct ContentView: View {
         ZStack {
         VStack() {
             HStack {
-                Spacer()
                 if viewModel.isCapturing {
                     Text("Capture in Progress...").padding(20)
                     Button(action: { viewModel.cancel() }) {
@@ -36,7 +35,6 @@ struct ContentView: View {
                         Text("Save Photo").padding()
                     }
                 }
-                Spacer()
             }
             if viewModel.isCapturing {
                 Progress(viewModel: viewModel)
@@ -74,7 +72,7 @@ struct FrameCountControl: View {
                 Text("\(Int(viewModel.frameCount))")
             }
             Slider(value: $viewModel.frameCount, in: 1...50, step: 1)
-        }.padding()
+        }
     }
 }
 
@@ -89,7 +87,7 @@ struct ExposureControl: View {
                 Text("\(exposureStringValues[Int(viewModel.exposureTimeIndex)])")
             }
             Slider(value: $viewModel.exposureTimeIndex, in: 0...Float(exposureValues.count-1), step: 1)
-        }.padding()
+        }
     }
 }
 
@@ -104,7 +102,7 @@ struct ISOControl: View {
                 Text("\(isoValues[Int(viewModel.isoIndex)])")
             }
             Slider(value: $viewModel.isoIndex, in: 0...Float(isoValues.count-1), step: 1)
-        }.padding()
+        }
     }
 }
 
@@ -119,7 +117,7 @@ struct FocusControl: View {
                 Text("\(viewModel.focus)")
             }
             Slider(value: $viewModel.focus, in: 0...1, step: 0.01)
-        }.padding()
+        }
     }
 }
 
@@ -160,7 +158,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(viewModel: CameraViewModel.Configurator(
             isPreparing: false,
-            isCapturing: true,
+            isCapturing: false,
             image: UIImage(named: "placeholder"),
             currentFrame: 2,
             totalFrames: 5,
@@ -169,5 +167,6 @@ struct ContentView_Previews: PreviewProvider {
             isoIndex: 4,
             countdown: 3
         ).build())
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
